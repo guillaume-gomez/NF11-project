@@ -1,0 +1,45 @@
+
+1) -?(0|[1-9][0-9]*)
+2) -?\\d+\\.[1-9][0-9]*
+3) \\B(le)\\B
+4) \\B\\d+\\B
+
+5) (\\d+).(\\d+)
+	correctionProf:
+	\"args\" \\p{blank}*:\\p{blank}*[\\d+,\\d+\\]
+6)
+
+On demande : "pasChiffre,chiffre,suite,2chiffres"
+
+//pour le valeur la plus petite
+\\D\\d(.*?)\\d{2}
+--> le point d'interrogation permet de recuperer la plus petite chaine
+Car ? lance un algorithme Passif, c'est a dire qu'il recupere le moins de caractere pour satisfaire sa condition
+
+\\D\\d(.*)\\d{2}
+Car * lance un algorithme Greedy, c'est a dire qu'il recupere le plus de caractere possible 
+tout en laissant les autres conditions satisfaites.
+--> le point d'interrogation permet de recuperer la plus grande chaine
+
+Ex : test = 254854121
+regex = \d+\d+
+group1 = 25485412
+group2 = 1
+
+CorrectionProf:
+plus longue chaine : (?<=\D\d).*(?=\d{2})
+plus courte chaine : (?<=\D\d).*?(?=\d{2})
+
+
+10)
+
+\\b[^ae]*\\b
+
+11)
+([a-zA-Z]{2,5})\\1
+
+12)
+(?i)\\b(?=[a-hj-z]*i[a-hj-z]\\b)(?=\\w*e)[a-z]+\\b
+
+13)
+\\b([A-Za-z]).*\\1\\b

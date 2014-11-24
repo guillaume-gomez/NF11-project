@@ -1,0 +1,15 @@
+av 100
+fcc 5
+lc
+av 100
+bc
+av 100
+fpos [ 100 50 ]
+av hasard 25
+"guigui 18
+lc
+re 125
+bc
+re 50
+td 90
+av 100
