@@ -4,6 +4,8 @@ A student homework to learn the language theory basics.
 
 This project was code in Java
 
+![Example](./example.png "ScreenShot")
+
 ------------
 [Website of the course](http://moodle.utc.fr/course/view.php?id=926)
 
